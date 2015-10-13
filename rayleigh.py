@@ -1,5 +1,8 @@
 '''
-Methods related to the Rayleigh test (e.g. Mardia 1972)
+Methods related to the Rayleigh test 
+ (e.g. Mardia & Jupp 2000,2008)
+http://dx.doi.org/10.1002/9780470316979
+
 '''
 
 import numpy as np
