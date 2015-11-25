@@ -15,7 +15,7 @@ DrogeTest()
 ````
 The output of this example reproduces their Figure 2, and should look like this:
 
-<img src="Fig2.png" width="600">
+<img src="fig2.png" width="600">
 
 A periodicity of 153 days (75 nHz) is found. Note the power spectrum is presented here in *frequency* units (per Droge et al. 1990), while `Rayleigh` computes the power spectrum in units of *days* (see next exmaple).
 
@@ -38,4 +38,4 @@ plt.xlabel('Period (days)')
 plt.ylabel('Rayleigh power (z)')
 plt.show()
 ````
-<img src="figure_1.png" width="600">
+<img src="random.png" width="600">
