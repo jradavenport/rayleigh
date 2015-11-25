@@ -43,6 +43,7 @@ def RayleighPowerSpectrum(times, minper=1.0, maxper=500.0, nper=100):
     Rayleigh Test on are computed as:
     >>> freq = 1 / (per * 24 * 60 * 60)
 
+
     Parameters
     ----------
     times : 1d array
@@ -60,6 +61,12 @@ def RayleighPowerSpectrum(times, minper=1.0, maxper=500.0, nper=100):
     Returns
     -------
     1d float array with length of nper
+
+
+    Examples
+    --------
+    >>> ps  = RayleighPowerSpectrum(times, minper=0.25, maxper=25, nper=123)
+
     '''
 
     maxfreq = 1. / (minper * 24. * 60. * 60.)
