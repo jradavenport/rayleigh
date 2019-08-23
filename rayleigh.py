@@ -1,5 +1,5 @@
 '''
-Methods related to the Rayleigh test 
+Methods related to the Rayleigh test
  (e.g. Mardia & Jupp 2000,2008)
 http://dx.doi.org/10.1002/9780470316979
 
@@ -77,6 +77,7 @@ def RayleighPowerSpectrum(times, minper=1.0, maxper=500.0, nper=100):
 
     # periods = 1. / freqs / (24. * 60. * 60.)
 
-    z = map(lambda v: RayleighTest(times * (24. * 60. * 60.), v), freqs)
+    # z = map(lambda v: RayleighTest(times * (24. * 60. * 60.), v), freqs)
+    z = [RayleighTest(times * (24. * 60. * 60.), v) for v in freqs]
 
     return z
